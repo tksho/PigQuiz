@@ -20,6 +20,8 @@
 		AB92C6CD1F20978900ABC3BD /* nife.png in Resources */ = {isa = PBXBuildFile; fileRef = AB92C6CC1F20978900ABC3BD /* nife.png */; };
 		AB92C6CF1F2098B600ABC3BD /* NameQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92C6CE1F2098B600ABC3BD /* NameQuizViewController.swift */; };
 		AB92C6D11F26DF2200ABC3BD /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92C6D01F26DF2200ABC3BD /* Quiz.swift */; };
+		AB92C6D31F270BF000ABC3BD /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = AB92C6D21F270BF000ABC3BD /* correct.png */; };
+		AB92C6D51F271AE300ABC3BD /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = AB92C6D41F271AE300ABC3BD /* incorrect.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		AB92C6CC1F20978900ABC3BD /* nife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nife.png; sourceTree = "<group>"; };
 		AB92C6CE1F2098B600ABC3BD /* NameQuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameQuizViewController.swift; sourceTree = "<group>"; };
 		AB92C6D01F26DF2200ABC3BD /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		AB92C6D21F270BF000ABC3BD /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
+		AB92C6D41F271AE300ABC3BD /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 				AB92C6C61F20944600ABC3BD /* mainPig.png */,
 				AB92C6CA1F20977900ABC3BD /* fork.png */,
 				AB92C6CC1F20978900ABC3BD /* nife.png */,
+				AB92C6D21F270BF000ABC3BD /* correct.png */,
+				AB92C6D41F271AE300ABC3BD /* incorrect.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -155,8 +161,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB92C6D31F270BF000ABC3BD /* correct.png in Resources */,
 				AB92C6C51F2091F300ABC3BD /* pig.png in Resources */,
 				AB92C6B61F208FBD00ABC3BD /* LaunchScreen.storyboard in Resources */,
+				AB92C6D51F271AE300ABC3BD /* incorrect.png in Resources */,
 				AB92C6CD1F20978900ABC3BD /* nife.png in Resources */,
 				AB92C6C11F2090CB00ABC3BD /* sublogo.png in Resources */,
 				AB92C6B31F208FBD00ABC3BD /* Assets.xcassets in Resources */,

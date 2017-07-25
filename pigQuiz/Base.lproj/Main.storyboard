@@ -227,12 +227,32 @@
                                     <action selector="tapOption4" destination="0YU-jF-MWP" eventType="touchUpInside" id="i1D-UE-nYR"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="abJ-Tf-p3S">
+                                <rect key="frame" x="48" y="453" width="93" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="XIc-UB-kH7">
+                                <rect key="frame" x="233" y="453" width="93" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Hy-By-MWX">
+                                <rect key="frame" x="233" y="538" width="93" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="bli-hE-b1U">
+                                <rect key="frame" x="50" y="538" width="93" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="descTextView" destination="7oB-ce-H9s" id="hko-2S-eke"/>
                         <outlet property="indexLabel" destination="25J-JZ-37K" id="z3x-bx-hKo"/>
+                        <outlet property="maru1" destination="abJ-Tf-p3S" id="gM6-BD-hwa"/>
+                        <outlet property="maru2" destination="XIc-UB-kH7" id="etl-XG-DOd"/>
+                        <outlet property="maru3" destination="bli-hE-b1U" id="2Ma-Sc-wAl"/>
+                        <outlet property="maru4" destination="1Hy-By-MWX" id="8yX-kW-RHs"/>
                         <outlet property="option1" destination="ann-dh-Nzf" id="m9f-cO-O4O"/>
                         <outlet property="option2" destination="dyb-Au-Id5" id="rV7-hZ-rcB"/>
                         <outlet property="option3" destination="uch-Gp-pVb" id="L32-Md-dYr"/>
@@ -245,9 +265,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="correct.png" width="332" height="322"/>
         <image name="fork.png" width="130" height="400"/>
         <image name="logo.png" width="264" height="49"/>
-        <image name="mainPig.png" width="727" height="800"/>
+        <image name="mainPig.png" width="700" height="700"/>
         <image name="nife.png" width="174" height="665"/>
         <image name="pig.png" width="450" height="290"/>
         <image name="sublogo.png" width="403" height="49"/>
