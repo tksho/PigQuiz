@@ -13,15 +13,17 @@ class Quiz: NSObject {
     var option1: String!
     var option2: String!
     var option3: String!
+    var option4: String!
     var answer: String!
     
-    init(text: String, option1: String, option2: String, option3: String, answer: String) {
+    // 初期化
+    init(text: String, option1: String, option2: String, option3: String, option4: String, answer: String) {
         self.text = text
         self.option1 = option1
         self.option2 = option2
         self.option3 = option3
+        self.option4 = option4
         self.answer = answer
     }
-    
-    
+
 }
