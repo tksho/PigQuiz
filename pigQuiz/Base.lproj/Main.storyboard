@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--Parts Quiz View Controller-->
         <scene sceneID="pCw-fC-HcR">
             <objects>
-                <viewController id="qk6-ko-9MP" sceneMemberID="viewController">
+                <viewController id="qk6-ko-9MP" customClass="PartsQuizViewController" customModule="pigQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OXR-qX-Voe"/>
                         <viewControllerLayoutGuide type="bottom" id="Qup-RX-HBV"/>
@@ -99,25 +99,196 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="部位当てクイズ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4I-yg-tca">
-                                <rect key="frame" x="99" y="138" width="177" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 / 20 問目" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPB-GM-cfn">
+                                <rect key="frame" x="88" y="81" width="199" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="赤身の中に脂が粗い網状に入っています。コクがあり、濃厚な味で様々な豚肉料理に幅広く使われる部位です。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0go-Xy-fF7">
+                                <rect key="frame" x="16" y="144" width="343" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="この部位はどこ？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCa-RK-nvt">
+                                <rect key="frame" x="66" y="265" width="243" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pig.png" translatesAutoresizingMaskIntoConstraints="NO" id="R6U-nr-O0h">
+                                <rect key="frame" x="16" y="340" width="343" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWD-Zh-Ecq">
+                                <rect key="frame" x="284" y="381" width="53" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="もも"/>
+                                <connections>
+                                    <action selector="tapMomo" destination="qk6-ko-9MP" eventType="touchUpInside" id="b9E-gT-2xH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxw-Ev-dsf">
+                                <rect key="frame" x="39" y="416" width="21" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapMimi" destination="qk6-ko-9MP" eventType="touchUpInside" id="s8K-vR-pmv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lT-dk-hPG">
+                                <rect key="frame" x="37" y="475" width="37" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapTan" destination="qk6-ko-9MP" eventType="touchUpInside" id="yZf-5U-4av"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYA-Zk-qRx">
+                                <rect key="frame" x="68" y="425" width="21" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapTontoro" destination="qk6-ko-9MP" eventType="touchUpInside" id="82l-3l-oxC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAB-Bc-Se3">
+                                <rect key="frame" x="80" y="482" width="36" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapKashira" destination="qk6-ko-9MP" eventType="touchUpInside" id="e8D-BP-9sw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZ6-Np-V3F">
+                                <rect key="frame" x="82" y="452" width="36" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapNankotsu" destination="qk6-ko-9MP" eventType="touchUpInside" id="VoH-OX-8ID"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tl1-S8-21F">
+                                <rect key="frame" x="124" y="464" width="36" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapHatsu" destination="qk6-ko-9MP" eventType="touchUpInside" id="mpi-3j-nRV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0g-ty-qMm">
+                                <rect key="frame" x="113" y="425" width="49" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapKatasuperibu" destination="qk6-ko-9MP" eventType="touchUpInside" id="FfY-3s-BQG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TT8-Yg-JGl">
+                                <rect key="frame" x="161" y="416" width="49" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapGatsu" destination="qk6-ko-9MP" eventType="touchUpInside" id="7d2-oT-5Ls"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJA-ui-0nU">
+                                <rect key="frame" x="163" y="434" width="49" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapRebaa" destination="qk6-ko-9MP" eventType="touchUpInside" id="cBc-er-fWh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0m-MW-L3o">
+                                <rect key="frame" x="201" y="419" width="39" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapMame" destination="qk6-ko-9MP" eventType="touchUpInside" id="xrQ-cu-qPh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7t5-Ij-o0K">
+                                <rect key="frame" x="231" y="422" width="39" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapHimo" destination="qk6-ko-9MP" eventType="touchUpInside" id="mJZ-fF-oaF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJT-9w-mtZ">
+                                <rect key="frame" x="256" y="423" width="39" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapDaityo" destination="qk6-ko-9MP" eventType="touchUpInside" id="ocO-JZ-bTC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jet-tA-r0p">
+                                <rect key="frame" x="161" y="360" width="115" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ロース"/>
+                                <connections>
+                                    <action selector="tapRose" destination="qk6-ko-9MP" eventType="touchUpInside" id="VQs-gy-mfy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNB-E4-O6S">
+                                <rect key="frame" x="188" y="452" width="80" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ばら"/>
+                                <connections>
+                                    <action selector="tapBara" destination="qk6-ko-9MP" eventType="touchUpInside" id="W5l-U3-DKZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0h5-9m-NrD">
+                                <rect key="frame" x="207" y="389" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ヒレ"/>
+                                <connections>
+                                    <action selector="tapFirre" destination="qk6-ko-9MP" eventType="touchUpInside" id="wyx-lM-CVr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5V-gq-PAe">
+                                <rect key="frame" x="100" y="370" width="62" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="肩ロース"/>
+                                <connections>
+                                    <action selector="tapKataRose" destination="qk6-ko-9MP" eventType="touchUpInside" id="ndK-2y-89K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2q-1g-Pni">
+                                <rect key="frame" x="131" y="509" width="29" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapTonsoku" destination="qk6-ko-9MP" eventType="touchUpInside" id="ks1-ii-8gv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.94509803921568625" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="baraBtn" destination="xNB-E4-O6S" id="PfI-CJ-FqW"/>
+                        <outlet property="daityoBtn" destination="GJT-9w-mtZ" id="hlH-th-Ins"/>
+                        <outlet property="descTextView" destination="0go-Xy-fF7" id="yl4-vO-Q3f"/>
+                        <outlet property="firreBtn" destination="0h5-9m-NrD" id="HKg-U2-YA9"/>
+                        <outlet property="gatsuBtn" destination="TT8-Yg-JGl" id="m1j-I1-hah"/>
+                        <outlet property="hatsuBtn" destination="Tl1-S8-21F" id="eOI-hv-8AZ"/>
+                        <outlet property="himoBtn" destination="7t5-Ij-o0K" id="EfC-jZ-alE"/>
+                        <outlet property="indexLabel" destination="hPB-GM-cfn" id="H1a-22-SgY"/>
+                        <outlet property="kashiraBtn" destination="uAB-Bc-Se3" id="Jfb-C0-hsR"/>
+                        <outlet property="kataRoseBtn" destination="o5V-gq-PAe" id="mw6-I6-CHY"/>
+                        <outlet property="katasuperibuBtn" destination="L0g-ty-qMm" id="lWd-nZ-c4t"/>
+                        <outlet property="mameBtn" destination="g0m-MW-L3o" id="tTu-5L-2Fp"/>
+                        <outlet property="mimiBtn" destination="gxw-Ev-dsf" id="G6Y-ZI-fK2"/>
+                        <outlet property="momoBtn" destination="mWD-Zh-Ecq" id="NEq-4m-Mrz"/>
+                        <outlet property="nankotsuBtn" destination="LZ6-Np-V3F" id="2g1-iD-1sJ"/>
+                        <outlet property="rebaaBtn" destination="HJA-ui-0nU" id="jeO-pO-oXF"/>
+                        <outlet property="roseBtn" destination="jet-tA-r0p" id="mQD-tt-7dn"/>
+                        <outlet property="tanBtn" destination="8lT-dk-hPG" id="YkT-hO-i38"/>
+                        <outlet property="tonsokuBtn" destination="s2q-1g-Pni" id="YOz-aa-4JH"/>
+                        <outlet property="tontoroBtn" destination="bYA-Zk-qRx" id="VDv-XP-QFJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b5q-Kd-fFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1512.8" y="542.87856071964018"/>
         </scene>
-        <!--View Controller-->
+        <!--High Score View Controller-->
         <scene sceneID="9lj-lB-Fz4">
             <objects>
-                <viewController id="Q7g-e1-icR" sceneMemberID="viewController">
+                <viewController id="Q7g-e1-icR" customClass="HighScoreViewController" customModule="pigQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xDb-dh-tfF"/>
                         <viewControllerLayoutGuide type="bottom" id="WYV-9P-Che"/>
@@ -127,7 +298,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ハイスコア" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8o-6J-381">
-                                <rect key="frame" x="114" y="136" width="146" height="21"/>
+                                <rect key="frame" x="114" y="74" width="146" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="部位名クイズ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oX8-7f-fqS">
+                                <rect key="frame" x="16" y="175" width="343" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95655864477157593" green="0.67266303300857544" blue="0.06047532707452774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="部位位置クイズ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHQ-oX-5gm">
+                                <rect key="frame" x="16" y="323" width="343" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.65989066019999998" blue="0.1058953982" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqC-Ei-OmS">
+                                <rect key="frame" x="139" y="479" width="96" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90012145042419434" green="0.44690440922009961" blue="0.59065196922839458" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" red="0.90012145042419434" green="0.85865280794973231" blue="0.83671341153258949" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="back" destination="Q7g-e1-icR" eventType="touchUpInside" id="olJ-IK-ObY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DD6-vH-xfV">
+                                <rect key="frame" x="22" y="380" width="330" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hr-16-lSC">
+                                <rect key="frame" x="22" y="234" width="330" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -136,10 +348,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.94509803921568625" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="8hr-16-lSC" id="xhC-Hw-PcJ"/>
+                        <outlet property="label_parts" destination="DD6-vH-xfV" id="Qyy-EW-VYf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iFe-nT-btp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1014" y="1299"/>
+            <point key="canvasLocation" x="1013.6" y="1298.5007496251876"/>
         </scene>
         <!--Name Quiz View Controller-->
         <scene sceneID="PFS-Oh-4sb">

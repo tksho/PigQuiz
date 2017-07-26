@@ -104,6 +104,19 @@ class NameQuizViewController: UIViewController {
                 rank = "マスター"
             }
             
+            // ハイスコアを超えたら保存
+            var highScore: Int = 0
+            var highScoreRank: String!
+            
+            let ud = UserDefaults.standard
+            highScoreRank = ud.string(forKey: "highScoreRank")
+            highScore = ud.integer(forKey: "highScore")
+            if numOfAnswer > highScore {
+                ud.set(numOfAnswer, forKey: "highScore")
+                ud.set(rank, forKey: "highScoreRank")
+            }
+            ud.synchronize()
+            
             // 正解数をアラートで表示
             let message = "結果は" + String(quizArray.count) + "問中" + String(numOfAnswer) + "問正解でした。あなたは「" + String(rank) + "」クラスです！"
             let alert = UIAlertController(title: "全問終了！", message: message, preferredStyle: .alert)
