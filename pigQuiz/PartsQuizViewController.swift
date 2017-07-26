@@ -17,6 +17,7 @@ class PartsQuizViewController: UIViewController {
     
     @IBOutlet var indexLabel: UILabel!
     @IBOutlet var descTextView: UITextView!
+    
     @IBOutlet var kataRoseBtn: UIButton!
     @IBOutlet var roseBtn: UIButton!
     @IBOutlet var baraBtn: UIButton!
@@ -36,7 +37,7 @@ class PartsQuizViewController: UIViewController {
     @IBOutlet var tonsokuBtn: UIButton!
     @IBOutlet var daityoBtn: UIButton!
 
-    @IBOutlet var maru_kataRose: UIImageView!
+    @IBOutlet var maru_kataRoseBtn: UIImageView!
     @IBOutlet var maru_roseBtn: UIImageView!
     @IBOutlet var maru_baraBtn: UIImageView!
     @IBOutlet var maru_momoBtn: UIImageView!
@@ -267,25 +268,152 @@ class PartsQuizViewController: UIViewController {
             indexLabel.text = String(indexOfQuiz+1) + "/" + String(quizArray.count) + "問目"
             descTextView.text = quizArray[indexOfQuiz].text
             
+            maru_kataRoseBtn.image = UIImage(named: "")
+            maru_roseBtn.image = UIImage(named: "")
+            maru_firreBtn.image = UIImage(named: "")
+            maru_baraBtn.image = UIImage(named: "")
+            maru_momoBtn.image = UIImage(named: "")
+            maru_katasuperibuBtn.image = UIImage(named: "")
+            maru_tanBtn.image = UIImage(named: "")
+            maru_tontoroBtn.image = UIImage(named: "")
+            maru_mimiBtn.image = UIImage(named: "")
+            maru_kashiraBtn.image = UIImage(named: "")
+            maru_nankotsuBtn.image = UIImage(named: "")
+            maru_hatsuBtn.image = UIImage(named: "")
+            maru_gatsuBtn.image = UIImage(named: "")
+            maru_rebaaBtn.image = UIImage(named: "")
+            maru_mameBtn.image = UIImage(named: "")
+            maru_himoBtn.image = UIImage(named: "")
+            maru_daityoBtn.image = UIImage(named: "")
+            maru_tonsokuBtn.image = UIImage(named: "")
         }
     }
     
     // 正解判定
     func checkAnswer(partsName: String){
-        // 正解判定
-        if partsName == "肩ロース" {
-            if partsName ==  quizArray[indexOfQuiz].answer {
+        if partsName ==  quizArray[indexOfQuiz].answer {
                 numOfAnswer += 1
-            }
-        }
-        else if partsName == "ばら" {
-            if partsName ==  quizArray[indexOfQuiz].answer {
-                numOfAnswer += 1
-            }
         }
         else {
-            print("おかしいです")
+            print("まちがいです")
         }
+        
+        // 回答が間違ってたら×をつける
+        if partsName !=  quizArray[indexOfQuiz].answer {
+            if partsName == "肩ロース" {
+                maru_kataRoseBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "ロース" {
+                maru_roseBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "ヒレ" {
+                maru_firreBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "ばら" {
+                maru_baraBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "もも" {
+                maru_momoBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "肩スペアリブ" {
+                maru_katasuperibuBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "タン" {
+                maru_tanBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "トントロ" {
+                maru_tontoroBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "ミミ" {
+                maru_mimiBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "カシラニク" {
+                maru_kashiraBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "なんこつ" {
+                maru_nankotsuBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "ハツ" {
+                maru_hatsuBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "ガツ" {
+                maru_gatsuBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "レバー" {
+                maru_rebaaBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "マメ" {
+                maru_mameBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "ヒモ" {
+                maru_himoBtn.image = UIImage(named: "incorrect.png")
+            }
+            else if partsName == "ダイチョウ" {
+                maru_daityoBtn.image = UIImage(named: "incorrect.png")
+            }
+            else {
+                maru_tonsokuBtn.image = UIImage(named: "incorrect.png")
+            }
+
+        }
+        
+        
+        // 正解に○をつける
+        if quizArray[indexOfQuiz].answer == "肩ロース" {
+            maru_kataRoseBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "ロース" {
+            maru_roseBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "ヒレ" {
+            maru_firreBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "ばら" {
+            maru_baraBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "もも" {
+            maru_momoBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "肩スペアリブ" {
+            maru_katasuperibuBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "タン" {
+            maru_tanBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "トントロ" {
+            maru_tontoroBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "ミミ" {
+            maru_mimiBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "カシラニク" {
+            maru_kashiraBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "なんこつ" {
+            maru_nankotsuBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "ハツ" {
+            maru_hatsuBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "ガツ" {
+            maru_gatsuBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "レバー" {
+            maru_rebaaBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "マメ" {
+            maru_mameBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "ヒモ" {
+            maru_himoBtn.image = UIImage(named: "correct.png")
+        }
+        else if quizArray[indexOfQuiz].answer == "ダイチョウ" {
+            maru_daityoBtn.image = UIImage(named: "correct.png")
+        }
+        else {
+            maru_tonsokuBtn.image = UIImage(named: "correct.png")
+        }
+    
     }
 
 }

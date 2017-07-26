@@ -345,7 +345,7 @@
                         <outlet property="maru_hatsuBtn" destination="Z6c-sY-7kK" id="Rpo-c7-6Jl"/>
                         <outlet property="maru_himoBtn" destination="p8r-a5-NNA" id="8Mm-fu-EMu"/>
                         <outlet property="maru_kashiraBtn" destination="RfQ-z6-aD0" id="eBo-bT-53N"/>
-                        <outlet property="maru_kataRose" destination="nuJ-8V-6IB" id="58K-UQ-Hw5"/>
+                        <outlet property="maru_kataRoseBtn" destination="nuJ-8V-6IB" id="QPB-yG-gQ9"/>
                         <outlet property="maru_katasuperibuBtn" destination="omA-i3-Z0W" id="HBi-MY-fCB"/>
                         <outlet property="maru_mameBtn" destination="P65-GC-eG2" id="eXN-3u-fnN"/>
                         <outlet property="maru_mimiBtn" destination="Vkd-TY-sty" id="AnD-qO-7vc"/>
