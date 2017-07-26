@@ -36,6 +36,25 @@ class PartsQuizViewController: UIViewController {
     @IBOutlet var tonsokuBtn: UIButton!
     @IBOutlet var daityoBtn: UIButton!
 
+    @IBOutlet var maru_kataRose: UIImageView!
+    @IBOutlet var maru_roseBtn: UIImageView!
+    @IBOutlet var maru_baraBtn: UIImageView!
+    @IBOutlet var maru_momoBtn: UIImageView!
+    @IBOutlet var maru_firreBtn: UIImageView!
+    @IBOutlet var maru_mimiBtn: UIImageView!
+    @IBOutlet var maru_tontoroBtn: UIImageView!
+    @IBOutlet var maru_tanBtn: UIImageView!
+    @IBOutlet var maru_kashiraBtn: UIImageView!
+    @IBOutlet var maru_nankotsuBtn: UIImageView!
+    @IBOutlet var maru_hatsuBtn: UIImageView!
+    @IBOutlet var maru_katasuperibuBtn: UIImageView!
+    @IBOutlet var maru_gatsuBtn: UIImageView!
+    @IBOutlet var maru_rebaaBtn: UIImageView!
+    @IBOutlet var maru_mameBtn: UIImageView!
+    @IBOutlet var maru_himoBtn: UIImageView!
+    @IBOutlet var maru_tonsokuBtn: UIImageView!
+    @IBOutlet var maru_daityoBtn: UIImageView!
+
     @IBAction func tapMimi() {
         print("ミミ")
         self.checkAnswer(partsName: "ミミ")

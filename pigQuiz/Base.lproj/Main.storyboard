@@ -127,7 +127,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWD-Zh-Ecq">
                                 <rect key="frame" x="284" y="381" width="53" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="もも"/>
                                 <connections>
                                     <action selector="tapMomo" destination="qk6-ko-9MP" eventType="touchUpInside" id="b9E-gT-2xH"/>
                                 </connections>
@@ -216,38 +215,6 @@
                                     <action selector="tapDaityo" destination="qk6-ko-9MP" eventType="touchUpInside" id="ocO-JZ-bTC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jet-tA-r0p">
-                                <rect key="frame" x="161" y="360" width="115" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ロース"/>
-                                <connections>
-                                    <action selector="tapRose" destination="qk6-ko-9MP" eventType="touchUpInside" id="VQs-gy-mfy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNB-E4-O6S">
-                                <rect key="frame" x="188" y="452" width="80" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ばら"/>
-                                <connections>
-                                    <action selector="tapBara" destination="qk6-ko-9MP" eventType="touchUpInside" id="W5l-U3-DKZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0h5-9m-NrD">
-                                <rect key="frame" x="207" y="389" width="61" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ヒレ"/>
-                                <connections>
-                                    <action selector="tapFirre" destination="qk6-ko-9MP" eventType="touchUpInside" id="wyx-lM-CVr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5V-gq-PAe">
-                                <rect key="frame" x="100" y="370" width="62" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="肩ロース"/>
-                                <connections>
-                                    <action selector="tapKataRose" destination="qk6-ko-9MP" eventType="touchUpInside" id="ndK-2y-89K"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2q-1g-Pni">
                                 <rect key="frame" x="131" y="509" width="29" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -255,6 +222,106 @@
                                     <action selector="tapTonsoku" destination="qk6-ko-9MP" eventType="touchUpInside" id="ks1-ii-8gv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jet-tA-r0p">
+                                <rect key="frame" x="161" y="360" width="115" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapRose" destination="qk6-ko-9MP" eventType="touchUpInside" id="VQs-gy-mfy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNB-E4-O6S">
+                                <rect key="frame" x="188" y="452" width="80" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapBara" destination="qk6-ko-9MP" eventType="touchUpInside" id="W5l-U3-DKZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0h5-9m-NrD">
+                                <rect key="frame" x="207" y="389" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapFirre" destination="qk6-ko-9MP" eventType="touchUpInside" id="wyx-lM-CVr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5V-gq-PAe">
+                                <rect key="frame" x="100" y="370" width="62" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapKataRose" destination="qk6-ko-9MP" eventType="touchUpInside" id="ndK-2y-89K"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="7b9-bO-eCL">
+                                <rect key="frame" x="198" y="450" width="59" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="1O0-0m-cS2">
+                                <rect key="frame" x="256" y="415" width="39" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="6gv-V9-x61">
+                                <rect key="frame" x="213" y="381" width="48" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="nuJ-8V-6IB">
+                                <rect key="frame" x="103" y="370" width="59" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="9M7-dJ-puO">
+                                <rect key="frame" x="158" y="353" width="59" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="omA-i3-Z0W">
+                                <rect key="frame" x="108" y="414" width="59" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vkd-TY-sty">
+                                <rect key="frame" x="29" y="410" width="40" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="P65-GC-eG2">
+                                <rect key="frame" x="198" y="415" width="40" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="7M0-B1-pm2">
+                                <rect key="frame" x="170" y="428" width="40" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="aGw-zz-FQX">
+                                <rect key="frame" x="34" y="469" width="40" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="iym-Xa-oPY">
+                                <rect key="frame" x="124" y="513" width="40" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="pvP-7C-Zq9">
+                                <rect key="frame" x="278" y="434" width="59" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="RfQ-z6-aD0">
+                                <rect key="frame" x="72" y="475" width="40" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="p8r-a5-NNA">
+                                <rect key="frame" x="228" y="417" width="40" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z6c-sY-7kK">
+                                <rect key="frame" x="120" y="459" width="40" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="vid-Pm-0qO">
+                                <rect key="frame" x="167" y="410" width="32" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="Oj4-FX-jar">
+                                <rect key="frame" x="88" y="445" width="40" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct.png" translatesAutoresizingMaskIntoConstraints="NO" id="hAL-7C-ok1">
+                                <rect key="frame" x="60" y="425" width="40" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.94509803921568625" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -271,6 +338,24 @@
                         <outlet property="kataRoseBtn" destination="o5V-gq-PAe" id="mw6-I6-CHY"/>
                         <outlet property="katasuperibuBtn" destination="L0g-ty-qMm" id="lWd-nZ-c4t"/>
                         <outlet property="mameBtn" destination="g0m-MW-L3o" id="tTu-5L-2Fp"/>
+                        <outlet property="maru_baraBtn" destination="7b9-bO-eCL" id="0dI-qM-M6D"/>
+                        <outlet property="maru_daityoBtn" destination="1O0-0m-cS2" id="oIr-gj-ynu"/>
+                        <outlet property="maru_firreBtn" destination="6gv-V9-x61" id="cqg-eO-L2a"/>
+                        <outlet property="maru_gatsuBtn" destination="vid-Pm-0qO" id="Jqj-BZ-FBr"/>
+                        <outlet property="maru_hatsuBtn" destination="Z6c-sY-7kK" id="Rpo-c7-6Jl"/>
+                        <outlet property="maru_himoBtn" destination="p8r-a5-NNA" id="8Mm-fu-EMu"/>
+                        <outlet property="maru_kashiraBtn" destination="RfQ-z6-aD0" id="eBo-bT-53N"/>
+                        <outlet property="maru_kataRose" destination="nuJ-8V-6IB" id="58K-UQ-Hw5"/>
+                        <outlet property="maru_katasuperibuBtn" destination="omA-i3-Z0W" id="HBi-MY-fCB"/>
+                        <outlet property="maru_mameBtn" destination="P65-GC-eG2" id="eXN-3u-fnN"/>
+                        <outlet property="maru_mimiBtn" destination="Vkd-TY-sty" id="AnD-qO-7vc"/>
+                        <outlet property="maru_momoBtn" destination="pvP-7C-Zq9" id="kMT-vO-Au9"/>
+                        <outlet property="maru_nankotsuBtn" destination="Oj4-FX-jar" id="ZHp-sn-f6k"/>
+                        <outlet property="maru_rebaaBtn" destination="7M0-B1-pm2" id="wlR-WU-eZh"/>
+                        <outlet property="maru_roseBtn" destination="9M7-dJ-puO" id="PNA-Pg-vQa"/>
+                        <outlet property="maru_tanBtn" destination="aGw-zz-FQX" id="9CA-Gt-aQt"/>
+                        <outlet property="maru_tonsokuBtn" destination="iym-Xa-oPY" id="sQv-TW-bmN"/>
+                        <outlet property="maru_tontoroBtn" destination="hAL-7C-ok1" id="Tcu-WD-BHF"/>
                         <outlet property="mimiBtn" destination="gxw-Ev-dsf" id="G6Y-ZI-fK2"/>
                         <outlet property="momoBtn" destination="mWD-Zh-Ecq" id="NEq-4m-Mrz"/>
                         <outlet property="nankotsuBtn" destination="LZ6-Np-V3F" id="2g1-iD-1sJ"/>
@@ -282,6 +367,10 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b5q-Kd-fFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct.png" id="O8H-C6-tbS">
+                    <rect key="frame" x="0.0" y="0.0" width="59" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </objects>
             <point key="canvasLocation" x="1512.8" y="542.87856071964018"/>
         </scene>
